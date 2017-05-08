@@ -17,6 +17,11 @@ deploy_key_rsa
 
 # myeclipse .metadata
 .metadata
+bin
+
+# idea
+.idea
+out
 
 #Java
 .class
