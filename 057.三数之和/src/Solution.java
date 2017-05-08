@@ -12,7 +12,7 @@ public class Solution {
 	 *         zero.
 	 */
 
-	// 排序后暴力穷举
+	// 排序后首尾相加找寻和为指定值的元素
 	public ArrayList<ArrayList<Integer>> threeSum(int[] numbers) {
 		// write your code here
 		// 排序
@@ -24,6 +24,7 @@ public class Solution {
 			// if(i+1<numbers.length&&numbers[i]==numbers[i+1]){
 			// continue;
 			// }
+
 			// 当前值和前面值相同，去除
 			if (i > 0 && numbers[i - 1] == numbers[i]) {
 				continue;
@@ -60,9 +61,9 @@ public class Solution {
 				ArrayList<Integer> temp = new ArrayList<>();
 				temp.add(numbers[l]);
 				temp.add(numbers[h]);
-				if (!results.contains(temp)) {
+				
 					results.add(temp);
-				}
+				
 
 				// 去除重复值
 				while (l < h && numbers[l] == numbers[l + 1]) {
