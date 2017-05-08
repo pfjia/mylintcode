@@ -15,13 +15,17 @@ build
 db.ini
 deploy_key_rsa
 
-# myeclipse .metadata
+# myeclipse
 .metadata
+.settings
 bin
+.classpath
+.project
+
 
 # idea
 .idea
 out
+*.iml
+.idea
 
-#Java
-.class
