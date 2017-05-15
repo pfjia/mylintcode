@@ -80,7 +80,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		Solution s = new Solution();
-		int[] nums = {5,4,3,2,1};
+		int[] nums = {0,1,0,5,0,4,3,2,1};
 		s.moveZeroes(nums);
         System.out.println(Arrays.toString(nums));
     }

@@ -12,7 +12,7 @@ public class Solution {
 	 */
 	public List<List<Integer>> combinationSum(int[] candidates, int target) {
 		// write your code here
-		List<List<Integer>> res = new ArrayList<List<Integer>>();
+		List<List<Integer>> res = new ArrayList<>();
 		if (candidates == null || candidates.length == 0) {
 			return res;
 		}
@@ -27,7 +27,7 @@ public class Solution {
 			return;
 		}
 		if (target == 0) {
-			res.add(new ArrayList<Integer>(item));
+			res.add(new ArrayList<>(item));
 			return;
 		}
 
